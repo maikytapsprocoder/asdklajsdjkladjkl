@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- cuerpo del mando -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,40 L76,40 A12,12 0 0 1 88,52 L88,58 A12,12 0 0 1 76,70 L32,70 A12,12 0 0 1 20,58 L20,52 A12,12 0 0 1 32,40 Z" />
+    <!-- cruceta -->
+    <path
+        android:fillColor="#101216"
+        android:pathData="M33,50 L37,50 L37,54 L41,54 L41,58 L37,58 L37,62 L33,62 L33,58 L29,58 L29,54 L33,54 Z" />
+    <!-- botones -->
+    <path
+        android:fillColor="#E0524B"
+        android:pathData="M75,49 A3,3 0 1 0 75.01,49 Z" />
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M75,61 A3,3 0 1 0 75.01,61 Z" />
+    <path
+        android:fillColor="#4CC38A"
+        android:pathData="M69,55 A3,3 0 1 0 69.01,55 Z" />
+    <path
+        android:fillColor="#E27FB4"
+        android:pathData="M81,55 A3,3 0 1 0 81.01,55 Z" />
+</vector>
