@@ -1,0 +1,31 @@
+name: Generar APK
+
+# Se ejecuta solo cada vez que subes cambios, o a mano desde la pestaña "Actions".
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      # Instala el Android SDK y acepta las licencias
+      - uses: android-actions/setup-android@v3
+
+      - name: Compilar
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: Guardar el APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MandoBluetooth-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
